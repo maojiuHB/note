@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="docker 镜像列表 docker images   删除镜像 docker rmi 镜像ID   正在运行的容器 docker ps   所有容器 docker ps -a   删除容器 docker rm 容器ID   导出本地镜像包 docker save -o 文件路径+后缀  镜像名:版本号docker save 镜像名:版本号  &amp;gt;  文件路径+后缀   导入镜像包 docke">
+<meta name="description" content="docker镜像列表docker images 删除镜像docker rmi &amp;quot;镜像ID&amp;quot; 正在运行的容器docker ps 所有容器docker ps -a 删除容器docker rm &amp;quot;容器ID&amp;quot; 导出本地镜像包docker save -o &amp;quot;文件路径+后缀&amp;quot; &amp;quot;镜像名:版本号&amp;quot; docker save &amp;quot">
 <meta property="og:type" content="article">
 <meta property="og:title" content="docker">
 <meta property="og:url" content="http://yoursite.com/note/2018/12/06/docker/index.html">
 <meta property="og:site_name" content="Note">
-<meta property="og:description" content="docker 镜像列表 docker images   删除镜像 docker rmi 镜像ID   正在运行的容器 docker ps   所有容器 docker ps -a   删除容器 docker rm 容器ID   导出本地镜像包 docker save -o 文件路径+后缀  镜像名:版本号docker save 镜像名:版本号  &amp;gt;  文件路径+后缀   导入镜像包 docke">
+<meta property="og:description" content="docker镜像列表docker images 删除镜像docker rmi &amp;quot;镜像ID&amp;quot; 正在运行的容器docker ps 所有容器docker ps -a 删除容器docker rm &amp;quot;容器ID&amp;quot; 导出本地镜像包docker save -o &amp;quot;文件路径+后缀&amp;quot; &amp;quot;镜像名:版本号&amp;quot; docker save &amp;quot">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-18T07:28:40.274Z">
+<meta property="og:updated_time" content="2018-12-18T07:45:21.075Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="docker">
-<meta name="twitter:description" content="docker 镜像列表 docker images   删除镜像 docker rmi 镜像ID   正在运行的容器 docker ps   所有容器 docker ps -a   删除容器 docker rm 容器ID   导出本地镜像包 docker save -o 文件路径+后缀  镜像名:版本号docker save 镜像名:版本号  &amp;gt;  文件路径+后缀   导入镜像包 docke">
+<meta name="twitter:description" content="docker镜像列表docker images 删除镜像docker rmi &amp;quot;镜像ID&amp;quot; 正在运行的容器docker ps 所有容器docker ps -a 删除容器docker rm &amp;quot;容器ID&amp;quot; 导出本地镜像包docker save -o &amp;quot;文件路径+后缀&amp;quot; &amp;quot;镜像名:版本号&amp;quot; docker save &amp;quot">
 
 
 
@@ -319,65 +319,23 @@
       
 
       
-        <h3 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h3><ul>
-<li>镜像列表<blockquote>
-<p>docker images</p>
-</blockquote>
-</li>
-<li>删除镜像<blockquote>
-<p>docker rmi <strong>镜像ID</strong></p>
-</blockquote>
-</li>
-<li>正在运行的容器<blockquote>
-<p>docker ps</p>
-</blockquote>
-</li>
-<li>所有容器<blockquote>
-<p>docker ps -a</p>
-</blockquote>
-</li>
-<li>删除容器<blockquote>
-<p>docker rm <strong>容器ID</strong></p>
-</blockquote>
-</li>
-<li>导出本地镜像包<blockquote>
-<p>docker save -o <strong>文件路径+后缀</strong>  <strong>镜像名:版本号</strong><br>docker save <strong>镜像名:版本号</strong>  &gt;  <strong>文件路径+后缀</strong></p>
-</blockquote>
-</li>
-<li>导入镜像包<blockquote>
-<p>docker load -i <strong>位置</strong><br>docker load &lt; <strong>位置</strong></p>
-</blockquote>
-</li>
-<li>关闭容器(发送SIGTERM信号,做一些’退出前工作’,再发送SIGKILL信号)<blockquote>
-<p>docker stop <strong>位置</strong></p>
-</blockquote>
-</li>
-<li>强制关闭容器(默认发送SIGKILL信号, 加-s参数可以发送其他信号)<blockquote>
-<p>docker kill <strong>容器ID</strong></p>
-</blockquote>
-</li>
-<li>启动容器<blockquote>
-<p>docker start <strong>容器ID</strong></p>
-</blockquote>
-</li>
-<li>重启容器<blockquote>
-<p>docker restart <strong>容器ID</strong></p>
-</blockquote>
-</li>
-<li>显示容器硬件资源使用情况<blockquote>
-<p>docker stats</p>
-</blockquote>
-</li>
-<li>运行docker文件<blockquote>
-<p>docker-compose -f <strong>文件路径</strong> up -d</p>
-</blockquote>
-</li>
-<li>docker打包<blockquote>
-<p>./mvnw clean package -Pprod jib:dockerBuild</p>
-</blockquote>
-</li>
-</ul>
-
+        <h1 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h1><h3 id="镜像列表"><a href="#镜像列表" class="headerlink" title="镜像列表"></a>镜像列表</h3><pre><code>docker images
+</code></pre><h3 id="删除镜像"><a href="#删除镜像" class="headerlink" title="删除镜像"></a>删除镜像</h3><pre><code>docker rmi &quot;镜像ID&quot;
+</code></pre><h3 id="正在运行的容器"><a href="#正在运行的容器" class="headerlink" title="正在运行的容器"></a>正在运行的容器</h3><pre><code>docker ps
+</code></pre><h3 id="所有容器"><a href="#所有容器" class="headerlink" title="所有容器"></a>所有容器</h3><pre><code>docker ps -a
+</code></pre><h3 id="删除容器"><a href="#删除容器" class="headerlink" title="删除容器"></a>删除容器</h3><pre><code>docker rm &quot;容器ID&quot;
+</code></pre><h3 id="导出本地镜像包"><a href="#导出本地镜像包" class="headerlink" title="导出本地镜像包"></a>导出本地镜像包</h3><pre><code>docker save -o &quot;文件路径+后缀&quot; &quot;镜像名:版本号&quot;
+docker save &quot;镜像名:版本号&quot;  &gt;  &quot;文件路径+后缀&quot;
+</code></pre><h3 id="导入镜像包"><a href="#导入镜像包" class="headerlink" title="导入镜像包"></a>导入镜像包</h3><pre><code>docker load -i &quot;位置&quot;
+docker load &lt; &quot;位置&quot;
+</code></pre><h3 id="关闭容器-发送SIGTERM信号-做一些’退出前工作’-再发送SIGKILL信号"><a href="#关闭容器-发送SIGTERM信号-做一些’退出前工作’-再发送SIGKILL信号" class="headerlink" title="关闭容器(发送SIGTERM信号,做一些’退出前工作’,再发送SIGKILL信号)"></a>关闭容器(发送SIGTERM信号,做一些’退出前工作’,再发送SIGKILL信号)</h3><pre><code>docker stop &quot;位置&quot;
+</code></pre><h3 id="强制关闭容器-默认发送SIGKILL信号-加-s参数可以发送其他信号"><a href="#强制关闭容器-默认发送SIGKILL信号-加-s参数可以发送其他信号" class="headerlink" title="强制关闭容器(默认发送SIGKILL信号, 加-s参数可以发送其他信号)"></a>强制关闭容器(默认发送SIGKILL信号, 加-s参数可以发送其他信号)</h3><pre><code>docker kill &quot;容器ID&quot;
+</code></pre><h3 id="启动容器"><a href="#启动容器" class="headerlink" title="启动容器"></a>启动容器</h3><pre><code>docker start &quot;容器ID&quot;
+</code></pre><h3 id="重启容器"><a href="#重启容器" class="headerlink" title="重启容器"></a>重启容器</h3><pre><code>docker restart &quot;容器ID&quot;
+</code></pre><h3 id="显示容器硬件资源使用情况"><a href="#显示容器硬件资源使用情况" class="headerlink" title="显示容器硬件资源使用情况"></a>显示容器硬件资源使用情况</h3><pre><code>docker stats
+</code></pre><h3 id="运行docker文件"><a href="#运行docker文件" class="headerlink" title="运行docker文件"></a>运行docker文件</h3><pre><code>docker-compose -f &quot;文件路径&quot; up -d
+</code></pre><h3 id="docker打包"><a href="#docker打包" class="headerlink" title="docker打包"></a>docker打包</h3><pre><code>./mvnw clean package -Pprod jib:dockerBuild
+</code></pre>
       
     </div>
     
@@ -527,7 +485,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#docker"><span class="nav-number">1.</span> <span class="nav-text">docker</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#docker"><span class="nav-number">1.</span> <span class="nav-text">docker</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#镜像列表"><span class="nav-number">1.0.1.</span> <span class="nav-text">镜像列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除镜像"><span class="nav-number">1.0.2.</span> <span class="nav-text">删除镜像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#正在运行的容器"><span class="nav-number">1.0.3.</span> <span class="nav-text">正在运行的容器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#所有容器"><span class="nav-number">1.0.4.</span> <span class="nav-text">所有容器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除容器"><span class="nav-number">1.0.5.</span> <span class="nav-text">删除容器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#导出本地镜像包"><span class="nav-number">1.0.6.</span> <span class="nav-text">导出本地镜像包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#导入镜像包"><span class="nav-number">1.0.7.</span> <span class="nav-text">导入镜像包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关闭容器-发送SIGTERM信号-做一些’退出前工作’-再发送SIGKILL信号"><span class="nav-number">1.0.8.</span> <span class="nav-text">关闭容器(发送SIGTERM信号,做一些’退出前工作’,再发送SIGKILL信号)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#强制关闭容器-默认发送SIGKILL信号-加-s参数可以发送其他信号"><span class="nav-number">1.0.9.</span> <span class="nav-text">强制关闭容器(默认发送SIGKILL信号, 加-s参数可以发送其他信号)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动容器"><span class="nav-number">1.0.10.</span> <span class="nav-text">启动容器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重启容器"><span class="nav-number">1.0.11.</span> <span class="nav-text">重启容器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示容器硬件资源使用情况"><span class="nav-number">1.0.12.</span> <span class="nav-text">显示容器硬件资源使用情况</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行docker文件"><span class="nav-number">1.0.13.</span> <span class="nav-text">运行docker文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#docker打包"><span class="nav-number">1.0.14.</span> <span class="nav-text">docker打包</span></a></li></ol></li></ol></div>
             
 
           </div>
